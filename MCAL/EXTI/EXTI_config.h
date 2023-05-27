@@ -1,0 +1,21 @@
+
+
+
+
+
+#ifndef  EXTI_CONFIG_H
+#define  EXTI_CONFIG_H
+
+/* OPTION :   INTERNAL_PULLUP       EXTERNAL_PULLDOWN      EXTERNAL_PULLUP   */
+
+#define  INT0_PIN_CONNECTION        INTERNAL_PULLUP
+#define  INT1_PIN_CONNECTION        INTERNAL_PULLUP
+#define  INT2_PIN_CONNECTION        INTERNAL_PULLUP
+
+
+
+
+
+
+
+#endif

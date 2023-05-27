@@ -1,0 +1,31 @@
+#include "../../LIB/BIT_MATH.h"
+#include "../../LIB/STD_TYPES.h"
+
+#include "lcd_interface.h"
+#include "lcdprivate.h"
+#include "lcd_config.h"
+#include <util/delay.h>
+
+
+void main (void)
+{
+	LCD_voidInit();
+}
+while(1)
+{
+	LCD_voidGoToXY(0,0);
+	LCD_voidsendData('A');
+	_delay_ms(1000);
+	LCD_voidclear();
+	LCD_voidGoToXY(0,1);
+		LCD_voidsendData('B');
+		_delay_ms(1000);
+		LCD_voidclear();
+		LCD_voidGoToXY(1,1);
+			LCD_voidsendData('C');
+			_delay_ms(1000);
+			LCD_voidclear();
+			LCD_voidGoToXY(1,0);
+				LCD_voidsendData('D');
+				_delay_ms(1000);
+}
